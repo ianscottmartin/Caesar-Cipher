@@ -1,0 +1,66 @@
+/* Apply linear gradient background color to the body */
+body {
+    background: linear-gradient(#941f53, #ffe66d);
+    /* Gradient from red to yellow */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* Ensure the body fills the viewport height */
+}
+
+/* Style the container */
+.container {
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    background: linear-gradient(#e612d5, #ffe66d);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Flex container for centering */
+.flex-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    /* Add some space between the heading and the flex container */
+}
+
+/* Style for encryption and decryption areas */
+.encryption-area,
+.decryption-area {
+    width: 50%;
+    padding: 20px;
+}
+
+/* Apply linear gradient to input areas */
+#originalName,
+#encryptedNameInput {
+    background: linear-gradient(#db6bd1, #ffe66d);
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 10px;
+    width: calc(100% - 22px);
+    margin-bottom: 10px;
+}
+
+/* Apply linear gradient to buttons */
+button {
+    background-color: #b91d9a;
+    color: rgb(199, 223, 46);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #1daab9;
+}
+
+h1 {
+    text-align: center;
+}
