@@ -24,6 +24,7 @@ body {
 .flex-container {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     margin-top: 20px;
     /* Add some space between the heading and the flex container */
 }
@@ -31,7 +32,8 @@ body {
 /* Style for encryption and decryption areas */
 .encryption-area,
 .decryption-area {
-    width: 50%;
+    width: 100%;
+    max-width: 300px;
     padding: 20px;
 }
 
@@ -63,4 +65,35 @@ button:hover {
 
 h1 {
     text-align: center;
+}
+
+/* Media queries for responsive design */
+@media (min-width: 768px) {
+
+    /* For tablets and larger screens */
+    .flex-container {
+        flex-direction: row;
+    }
+
+    .encryption-area,
+    .decryption-area {
+        width: 45%;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    /* For desktop and larger screens */
+    .flex-container {
+        justify-content: space-between;
+    }
+
+    .encryption-area,
+    .decryption-area {
+        width: 40%;
+    }
+
+    .container {
+        max-width: 800px;
+    }
 }
